@@ -1,0 +1,12 @@
+type Set {
+    id: Int!
+    name: String
+}
+
+type Query {
+    allSets: [Set]
+}
+
+type Mutation {
+    addSet(name: String): Set
+}
